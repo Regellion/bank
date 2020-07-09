@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?> <configuration status="WARN">
+
+    <appenders>
+        <File name="InfoFile" fileName="logs/info_logs.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level - %msg%n"/>
+            <Filters>
+                <MarkerFilter marker="INFO"/>
+            </Filters>
+        </File>
+    </appenders>
+
+    <loggers>
+        <root level="info">
+            <appender-ref ref="InfoFile"/>
+        </root>
+    </loggers>
+
+</configuration>
