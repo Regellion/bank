@@ -6,6 +6,7 @@ public class Bank
     private HashMap<String, Account> accounts;
     private final Random random = new Random();
     private static final int checkAmount = 50000;
+    private static String testString = "";
 
     public synchronized boolean isFraud(String fromAccountNum, String toAccountNum, long amount)
             throws InterruptedException
